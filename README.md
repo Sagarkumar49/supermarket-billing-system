@@ -18,9 +18,13 @@ A fully interactive **Supermarket Billing System** built using Python that simul
 
 ## 📷 Demo
 
+### 🖼️ Sample Screenshot
 <img src="demo-thumbnail.png" alt="Supermarket Billing System Demo" width="600"/>
 
-> Example of the itemized bill generated and saved as PDF
+### 📄 Sample PDF Bill
+[📥 Click here to download the sample PDF bill](./sample-bill.pdf)
+
+> Example of the itemized bill generated and saved as a professional PDF using Python
 
 ---
 
