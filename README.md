@@ -1,4 +1,6 @@
- Project Overview
+#Project Overview
+
+
 This Python-based SuperMarket Billing System simulates a real-world retail billing process. It allows cashiers to:
 
 Add multiple products to a cart
