@@ -1,124 +1,98 @@
-#Project Overview
+# Supermaeket Billing System
 
+## 🔍 Project Overview
 
-This Python-based SuperMarket Billing System simulates a real-world retail billing process. It allows cashiers to:
+This Python-based SuperMarket Billing System simulates a real-world retail billing process.
+It allows cashiers to:
 
+- Add multiple products to a cart
 
+- Apply automated discounts based on purchase amount
 
-Add multiple products to a cart
+- Generate itemized receipts in TXT & PDF formats
 
-Apply automated discounts based on purchase amount
+- Validate user inputs (mobile number, product names)
 
-Generate itemized receipts in TXT & PDF formats
+**Goal:** Demonstrate Python skills in file handling, loops, conditionals, and user interaction while solving a practical problem.
 
-Validate user inputs (mobile number, product names)
-
-Goal: Demonstrate Python skills in file handling, loops, conditionals, and user interaction while solving a practical problem.
-
-✨ Features
-
+## ✨ Features
 
 ✅ Interactive Console Interface
 
+- Guides users step-by-step (name, mobile, product selection).
 
-Guides users step-by-step (name, mobile, product selection).
-
-Case-insensitive product search (e.g., "Apple" = "apple").
-
+- Case-insensitive product search (e.g., "Apple" = "apple").
 
 ✅ Dynamic Discounts
 
-
-Total Purchase	Discount
-
-
-≤ ₹500	10%
-≤ ₹1000	15%
-≤ ₹1500	20%
-> ₹1500	30%
-
-
+ Total Purchase |	Discount 
+----------------|-----------
+≤ ₹500	        | 10% 
+≤ ₹1000	        | 15% 
+≤ ₹1500	        | 20%
+| > ₹1500	        | 30%      |
 
 ✅ Receipt Generation
 
+- Text (.txt): Simple formatted bill.
 
-
-Text (.txt): Simple formatted bill.
-
-PDF (.pdf): Professional layout with borders.
-
-
+- PDF (.pdf): Professional layout with borders.
 
 ✅ Input Validation
 
+- Ensures:
 
-Ensures:
+    - Non-empty customer names.
 
-Non-empty customer names.
+    - 10-digit mobile numbers (using Regex).
 
-10-digit mobile numbers (using Regex).
-
-Valid product names.
-
-
+    - Valid product names.
 
 ✅ Multi-Transaction Support
 
+- Processes multiple customers in one session.
 
-
-Processes multiple customers in one session.
-
-
-🛠️ Installation
-
+## 🛠️ Installation
 
 Clone the repository:
 
-
-bash
+```bash
 git clone https://github.com/your-username/supermarket-billing.git
 cd supermarket-billing
 Install dependencies (only fpdf needed):
-
-
-bash
+```
+```bash
 pip install fpdf
-
-
-
-🚀 Usage
-
-
+```
+## 🚀 Usage
 
 Run the script:
 
-bash
+```bash
 python supermarket_billing.py
-Follow prompts:
+```
+2. Follow prompts:
 
-Enter customer details (name, mobile).
+    - Enter customer details (name, mobile).
 
-Add products (e.g., "apple", "milk") and quantities.
+    - Add products (e.g., "apple", "milk") and quantities.
 
-Choose to save receipts as TXT/PDF.
+    - Choose to save receipts as TXT/PDF.
 
-Example Workflow:
+3. Example Workflow:
 
-plaintext
-
+```plaintext
 Insert a Name: John Doe  
 Enter Mob No.: 9876543210  
 Product name: apple  
 Quantity: 2  
 Want to add more items? (yes/no): no  
 Do you want to save the bill? (yes/no): yes  
-Do you want to save the bill as a PDF? (yes/no): yes  
+Do you want to save the bill as a PDF? (yes/no): yes
+```  
+## 🧩 Code Structure
 
-
-🧩 Code Structure
-
-python
-
+```python
 # 1. PRODUCT DATABASE
 Products = {
     "apple": 30,
@@ -126,33 +100,25 @@ Products = {
     # ... (10+ items)
 }
 
-
 # 2. INPUT VALIDATION
-
-
 while not name:  # Ensures non-empty name
 while not re.fullmatch(r"\d{10}", mob):  # Validates mobile
 
 # 3. DISCOUNT LOGIC
-
-
 if amount <= 500: discount = 0.10
 elif amount <= 1000: discount = 0.15
 # ...
 
 # 4. RECEIPT GENERATION (TXT/PDF)
-
 with open(filename, "w") as file:
     file.write(bill_content)
 pdf = FPDF()  # PDF formatting
 
-
-📸 Sample Outputs
-
-
+```
+## 📸 Sample Outputs
 Text Receipt
-plaintext
 
+~~~plaintext
 --- Supermarket Bill ---  
 Name        : John Doe  
 Mobile No.  : 9876543210  
@@ -163,35 +129,35 @@ Item Name    Quantity  Price  Total
 apple        2         30     60.00  
 bread        1         40     40.00  
 ----------------------------------  
-Total Payable: ₹90.00 (Saved: ₹10.00)  
+Total Payable: ₹90.00 (Saved: ₹10.00)
+~~~ 
 PDF Receipt
+
 (See /docs/sample_receipt.pdf for a formatted example.)
 
+## 🔮 Future Improvements
 
+- GUI Version: Add Tkinter/PyQt interface.
 
-🔮 Future Improvements
+- Inventory Management: Track stock levels.
 
+- Barcode Scanner: Integrate with pyzbar for quick input.
 
-GUI Version: Add Tkinter/PyQt interface.
+## 🤝 Contributing
 
-Inventory Management: Track stock levels.
+1. Fork the repository.
 
-Barcode Scanner: Integrate with pyzbar for quick input.
+2. Create a branch (git checkout -b feature/new-discounts).
 
-🤝 Contributing
+3. Commit changes (git commit -m "Add new feature").
 
+4. Push to the branch (git push origin feature/new-discounts).
 
-Fork the repository.
+5. Open a Pull Request.
 
-Create a branch (git checkout -b feature/new-discounts).
-
-Commit changes (git commit -m "Add new feature").
-
-Push to the branch (git push origin feature/new-discounts).
-
-Open a Pull Request.
-
-
-📜 License
+## 📜 License
 This project is licensed under the MIT License. See LICENSE for details.
 
+## 🌟 Show Support
+
+If you find this useful, give it a ⭐ on GitHub!
