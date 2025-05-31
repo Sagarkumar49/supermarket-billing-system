@@ -133,7 +133,7 @@ Total Payable: ₹90.00 (Saved: ₹10.00)
 ~~~ 
 PDF Receipt
 
-(See /docs/sample_receipt.pdf for a formatted example.)
+[(See /docs/sample_receipt.pdf for a formatted example.)](./sample-bill.pdf)
 
 ## 🔮 Future Improvements
 
