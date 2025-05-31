@@ -156,7 +156,10 @@ PDF Receipt
 5. Open a Pull Request.
 
 ## 📜 License
-This project is licensed under the MIT License. See LICENSE for details.
+This project is licensed under the MIT License.
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)  
+Copyright © 2025 [Sagarkumar49](https://github.com/Sagarkumar49)
 
 ## 🌟 Show Support
 
