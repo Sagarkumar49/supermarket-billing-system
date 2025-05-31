@@ -34,9 +34,9 @@ It allows cashiers to:
 
 ✅ Receipt Generation
 
-- Text (.txt): Simple formatted bill.
+- Text (.txt): [Simple formatted bill.](./demo-thumbnail.png.jpg)
 
-- PDF (.pdf): Professional layout with borders.
+- PDF (.pdf): [Professional layout with borders.](./sample-bill.pdf)
 
 ✅ Input Validation
 
