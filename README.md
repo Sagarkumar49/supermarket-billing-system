@@ -1,4 +1,4 @@
-# Supermaeket Billing System
+# 🛒 SuperMarket Billing System - Python  
 
 ## 🔍 Project Overview
 
